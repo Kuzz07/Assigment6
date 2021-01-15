@@ -16,9 +16,7 @@ class AboutFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
 
-//        val intent =
-//            Intent(Intent.ACTION_VIEW).setData(Uri.parse("www.softwarica.edu.np"))
-//        startActivity(intent)
+
 
 
 
@@ -28,55 +26,21 @@ class AboutFragment : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
-//        val myWebView: WebView = view.findViewById(R.id.webview)
-//        myWebView.loadUrl("http://www.example.com")
-
-        // val myWebView: WebView = getView().findViewById(R.id.webview)
-
-//
-//        val myWebView: WebView = requireView().findViewById(R.id.webview)
-//        myWebView.loadUrl("www.google.com")
-
-//        val url = "http://google.com/"
-//        val view = view?.findViewById(R.id.webview) as WebView
-//        view.settings.javaScriptEnabled = true
-//        view.loadUrl(url)
-
-
-//        mWebView = mWebView!!.findViewById(R.id.mWebView) as WebView
-//        mWebView!!.loadUrl("google.com")
-//
-//        // Enable Javascript
-//
-//        // Enable Javascript
-//        val webSettings: WebSettings = mWebView!!.getSettings()
-//        webSettings.javaScriptEnabled = true
-//
-//        // Force links and redirects to open in the WebView instead of in a browser
-//
-//        // Force links and redirects to open in the WebView instead of in a browser
-//        mWebView!!.setWebViewClient(WebViewClient())
 
 
 
-        ////////////////////
+
 
         val v: View = inflater.inflate(R.layout.fragment_about, container, false)
 
         mWebView = v.findViewById<View>(R.id.webview) as WebView
         mWebView!!.loadUrl("https://www.softwarica.edu.np")
 
-        // Enable Javascript
 
-        // Enable Javascript
         val webSettings = mWebView!!.settings
         webSettings.javaScriptEnabled = true
 
-        // Force links and redirects to open in the WebView instead of in a browser
 
-        // Force links and redirects to open in the WebView instead of in a browser
         mWebView!!.webViewClient = WebViewClient()
 
 
@@ -92,8 +56,6 @@ class AboutFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-//        val myWebView: WebView = requireView().findViewById(R.id.webview)
-//        myWebView.loadUrl("www.google.com")
 
 
 
